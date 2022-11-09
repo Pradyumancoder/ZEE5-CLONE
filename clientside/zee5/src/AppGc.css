@@ -1,0 +1,340 @@
+.App {
+  text-align: center;
+  background-color: rgb(15, 6, 23);
+  color: white;
+}
+
+.nav-ls-btn {
+  border: 1px solid rgb(131, 48, 198);
+  background-color: rgb(131, 48, 198);
+  padding: 6px 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.footer-topic-title {
+  cursor: pointer;
+}
+
+.footer-hover:hover {
+  color: rgb(131, 48, 198);
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(15, 6, 23);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(34, 26, 41);
+  border-radius: 7px;
+}
+
+.slider {
+  height: 77vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 36px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider > div {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.slider > div > img {
+  height: 98%;
+  width: 94%;
+  border-radius: 1px;
+}
+.slider-button {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  bottom: 10px;
+  left: 67px;
+}
+
+.slider-watch-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border-radius: 7px;
+  font-weight: bold;
+  padding: 11px 21px;
+  bottom: 27px;
+  left: 27px;
+  color: rgb(47, 47, 47);
+  background-color: #fff;
+  border: 2px solid whitesmoke;
+}
+
+.slider-watch-btn:hover {
+  color: whitesmoke;
+  background-color: rgba(37, 37, 37, 0.377);
+}
+
+.slider-buy-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 2px solid rgb(131, 48, 198);
+  border-radius: 7px;
+  font-weight: bold;
+  padding: 11px 21px;
+  bottom: 27px;
+  left: 170px;
+  background-color: rgb(131, 48, 198);
+}
+
+.slider-buy-btn:hover {
+  border-color: whitesmoke;
+  background-color: rgba(37, 37, 37, 0.377);
+}
+
+.slider-item-title {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 800;
+  top: 380px;
+  left: 97px;
+  letter-spacing: 2px;
+  /* color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(40deg, #a785ff 35%, lightgray 55%); */
+  color: white;
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+.arrow {
+  font-size: 47px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 6;
+  font-weight: normal;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 30px;
+}
+
+.top-ten-numbers {
+  /* position: absolute; */
+  font-family: NotoSansBold, sans-serif;
+  font-size: 2.8rem;
+  line-height: 1em;
+  font-weight: 800;
+  /* top: 2.6rem;
+  right: 2.4rem; */
+  color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(40deg, #a785ff 35%, #fff 55%);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+.card-icon {
+  position: absolute;
+  color: red;
+  background-color: whitesmoke;
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-play-icon {
+  position: absolute;
+  background-color: rgba(37, 37, 37, 0.377);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.card-play-icon:hover {
+  color: rgb(47, 47, 47);
+  background-color: whitesmoke;
+}
+
+.google-icon {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+
+span {
+  color: rgb(176, 80, 255);
+  cursor: pointer;
+}
+
+.scrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* .slider-card{
+  display: block;
+} */
+
+.slCard {
+  width: 90%;
+  margin: auto;
+}
+.slCard {
+  width: 95%;
+  height: 20%;
+  /* margin: auto; */
+  /* margin-left: 4%; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.slider-card {
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  margin-left: 2.4%;
+  text-align: justify;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  overflow-x: scroll;
+  gap: 36px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-card::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-card > img {
+  height: auto;
+  width: 95%;
+  /* margin-right: 20%; */
+  border-radius: 1px;
+}
+.slider-button {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  bottom: 10px;
+  left: 26px;
+}
+/* @media only screen and (max-width: 1200px) {
+  .slider-button {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    bottom: 10px;
+    left: 20px;
+  }}
+  @media only screen and (min-width: 1200px) {
+  .slider-item-title {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+    color: red;
+    font-size: 36px;
+    font-weight: 800;
+    top: 200px;
+    left: 20px;
+  } */
+/* } */
+.slider-watch-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border-radius: 7px;
+  font-weight: bold;
+  padding: 11px 21px;
+  bottom: 27px;
+  left: 27px;
+  color: rgb(47, 47, 47);
+  background-color: #fff;
+  border: 2px solid whitesmoke;
+}
+
+.slider-watch-btn:hover {
+  color: whitesmoke;
+  background-color: rgba(37, 37, 37, 0.377);
+}
+
+.slider-buy-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 2px solid rgb(131, 48, 198);
+  border-radius: 7px;
+  font-weight: bold;
+  padding: 11px 21px;
+  bottom: 27px;
+  left: 170px;
+  background-color: rgb(131, 48, 198);
+}
+
+.slider-buy-btn:hover {
+  border-color: whitesmoke;
+  background-color: rgba(37, 37, 37, 0.377);
+}
+
+.slider-item-title {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  top: 320px;
+  left: 60px;
+  letter-spacing: 2px;
+  /* color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(40deg, #a785ff 35%, lightgray 55%); */
+  color: rgb(245, 245, 245);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+.slick-dots {
+  color: white;
+}

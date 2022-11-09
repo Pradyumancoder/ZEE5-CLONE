@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./AppGc.css";
+import NavbarGc from "./Components-Gc/NavBarGc";
+import AllRoutes from "./Routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        Navbar
+        {/* <NavbarGc></NavbarGc> */}
+      </h1>
+      <AllRoutes></AllRoutes>
+      <h1>Footer</h1>
     </div>
   );
 }
