@@ -1,7 +1,7 @@
 import React from "react";
-import { Box, Flex, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, Image, Text, VStack } from "@chakra-ui/react";
 import Slider from "react-slick";
-import { Settings } from "../Components-Gc/common/settings";
+import { Settings } from "../common/settings";
 
 let data = [
   {
@@ -39,7 +39,7 @@ let data = [
   },
 ];
 
-const RentandWatch = () => {
+const RentandWatchMovie = () => {
   return (
     <Box mx={5} mt={1} textAlign="left">
       <Text fontSize="2xl" fontWeight="bold" my={7} className="z-0">
@@ -58,4 +58,4 @@ const RentandWatch = () => {
   );
 };
 
-export default RentandWatch;
+export default RentandWatchMovie;

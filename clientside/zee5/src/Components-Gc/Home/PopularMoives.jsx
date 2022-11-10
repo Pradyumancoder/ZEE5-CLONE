@@ -1,10 +1,8 @@
-import { Box, Grid, Text } from "@chakra-ui/react";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { Box, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
-import Card1Gc from "./common/Card1Gc";
-import CardGc from "./common/CardGc";
-import { Settings } from "../Components-Gc/common/settings";
+
+import CardGc from "../common/CardGc";
+import { Settings } from "../common/settings";
 let data = [
   {
     url: "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5149852/portrait/1920x7708760d4e6a1c8429cbfea6f1e4a375f6d25ac3d74d6544bc89704d6475e368c79.jpg",

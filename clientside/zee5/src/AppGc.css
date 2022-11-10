@@ -258,28 +258,48 @@ span {
   bottom: 10px;
   left: 26px;
 }
-/* @media only screen and (max-width: 1200px) {
-  .slider-button {
-    position: absolute;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 11px;
-    bottom: 10px;
-    left: 20px;
-  }}
-  @media only screen and (min-width: 1200px) {
-  .slider-item-title {
-    position: absolute;
-    font-family: "Roboto", sans-serif;
-    color: red;
-    font-size: 36px;
-    font-weight: 800;
-    top: 200px;
-    left: 20px;
-  } */
-/* } */
+
+/* moive card */
+
+.slCardMoive{
+  width: 92%;
+  margin: auto;
+  
+}
+.slider-cardMovie {
+  width: 95%;
+  height: 10%;
+  margin: auto;
+  margin-left: 2.4%;
+  text-align: justify;
+  /* overflow-x: scroll; */
+  gap: 36px;
+  position: relative;
+  cursor: pointer;
+}
+.slider-cardMovie::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-cardMovie > img {
+  height: 500px;
+  width: 94%;
+  margin: auto;
+  object-fit: cover;
+  margin-right: 18%;
+  border-radius: 2px;
+}
+.slider-button {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  bottom: 10px;
+  left: 26px;
+}
+
 .slider-watch-btn {
   position: absolute;
   display: flex;
@@ -324,7 +344,7 @@ span {
 .slider-item-title {
   position: absolute;
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 800;
   top: 320px;
   left: 60px;

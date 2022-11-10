@@ -6,6 +6,11 @@ import { FaCrown, FaPlay } from "react-icons/fa";
 function CardGc({ item, index ,prem}) {
   const [state, setState] = useState(false);
   
+  const hanldeClick=(it)=>{
+    console.log('handleClick:' ,it)
+
+  }
+  
 
   return (
     <GridItem
@@ -16,7 +21,7 @@ function CardGc({ item, index ,prem}) {
       borderRadius={"lg"}
       onMouseEnter={() => setState(true)}
       onMouseLeave={() => setState(false)}
-      className="hover:z-10 mt-10 first-letter:overflow-hidden my-4 hover:scale-105 duration-150"
+      className="hover:z-10 mt-10 first-letter:overflow-hidden my-4 hover:scale-105 duration-150" onClick={()=>hanldeClick(item)}
     >
       <Box>
         <Image src={item.url} alt={item.popupTitle} borderRadius="lg" w="100%" />
