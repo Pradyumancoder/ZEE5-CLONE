@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --light-background: #F5F5F5;
+    --button-color: #8230C6;
+    --question-icon: #666666;
+    --bold-text: #333333;
+
+}
+
+* {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#subscription {
+    position: relative;
+    font-family: 'Noto Sans', sans-serif, 'Poppins';
+    box-sizing: border-box;
+    margin: auto;
+    background-color: white;
+    color: black;
+    width: 880px;
+    height: 460px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+.left-box {
+    background-color: var(--light-background);
+    padding: 30px;
+}
+
+.left-box-heading {
+    padding: 12px;
+    color: var(--bold-text);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.left-box-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px 13px 0
+}
+
+.left-box-content-item>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.tick-mark-icon {
+    font-size: 20px;
+    color: pink;
+    margin-right: 4px;
+}
+
+
+.text-light {
+    color: var(--bold-text);
+}
+
+.text-dark {
+    color: var(--bold-text);
+    font-weight: bold;
+}
+
+.question-mark-icon {
+    color: var(--question-icon);
+    font-size: 1.6rem;
+}
+
+/*   styling for right box */
+
+#subscription .right-box {
+    padding: 30px;
+}
+
+.right-box-heading-1>div:nth-child(1) {
+    background: rgb(255,233,252);
+    background: linear-gradient(90deg, rgba(255,233,252,1) 6%, rgba(255,251,254,1) 99%);
+    width: 380px;
+    height: 108px;
+    padding: 16px 34px 16px 10px;
+}
+.computer-icon{
+    font-size: 18px;
+}
+
+.crown{
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -25px;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+}
+.crown-image{
+    font-size: 35px;
+    color: #f112fc;
+}
+
+/*  make responsive */
+
+@media screen and (max-width: 1000px) {
+#subscription {
+    background-color: white;
+    width:100vw;
+    height: max-content;
+    grid-template-columns: repeat(1,1fr);
+    border: 1px solid black;
+    /* overflow: hidden; */
+
+  }
+  .left-box-content-item{
+    width: 100vh;
+    padding: 0;
+    justify-content: start;
+  }
+  .right-box-heading-1>div:nth-child(1) {
+    width: 100vw;
+    background-color: greenyellow;
+  }
+  .left-box{
+    padding: 0;
+    width: 100vw;
+  }
+  .left-box-content {
+    max-width: 100vw;
+    /* overflow: hidden; */
+  }
+  .right-box{
+    width: 100vh;
+  }
+}
