@@ -1,0 +1,19 @@
+product-video <no relationship> user
+user <1 to 1-relationship> premium-subscription
+=> login,sinup,play-video,serarch (debouncing)
+
+
+POST /user/login
+POST /user/signup
+
+GEt /video/zeeSlide
+GEt /video/zeeTop10
+GEt /video/zeeLatest
+GEt /video/zeeOriginalWebSeries
+GEt /video/PremiumBollywood
+GEt /video/IMDBtopPicks
+GEt /video/News
+GEt /video/tvShows
+
+
+
