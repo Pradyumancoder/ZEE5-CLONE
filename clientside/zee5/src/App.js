@@ -1,15 +1,15 @@
 import "./AppGc.css";
-import NavbarGc from "./Components-Gc/NavBarGc";
-import AllRoutes from "./Routes/AllRoutes";
 
+import AllRoutes from "./Routes/AllRoutes";
+import Navbar from "./components-v/NavbarV"
 function App() {
   return (
     <div className="App">
-      <h1>
-        Navbar
-        {/* <NavbarGc></NavbarGc> */}
-      </h1>
-      <AllRoutes></AllRoutes>
+<Navbar />
+
+      <AllRoutes>
+
+      </AllRoutes>
       <h1>Footer</h1>
     </div>
   );
