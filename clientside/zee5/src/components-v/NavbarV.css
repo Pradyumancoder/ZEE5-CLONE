@@ -1,7 +1,7 @@
 
 
 .NavbarMainV{
-    background-color: black;
+    background-color:black;
     font-weight:400;
     justify-content: space-between;
     padding-top: 5px;
@@ -71,3 +71,47 @@ margin-top: 10px;
     .Crown{
         margin-right:5px
     }
+
+    
+    @media only screen and (max-width: 479px) {
+
+        .NavbarSecondpartV-Search{
+            width: 75%;
+            margin-left: -15%;
+padding-bottom: 5px;
+        }
+        .NavbarFirstPartV-Home{
+            display: none;
+        }
+        .NavbarFirstPartV-Tv{
+            display: none;
+        }
+        .NavbarFirstPartV-Movies{
+            display: none;
+        }
+        .NavbarFirstPartV-Option{
+            display: none;
+        }
+        .NavbarSecondPartV-Lan{
+            display: none;
+        }
+        .NavbarMainV{
+            background-color:black;
+            font-weight:300;
+            justify-content: space-between;
+            padding-top: 3px;
+            padding-left: 3px;
+            padding-bottom: 3px;
+        }
+        .NavbarFirstPartV-Icon{
+            height: 30px;
+            margin-top: 10px;
+        }
+        .NavbarSecondPartV-Login{
+            display:none
+        }
+        .NavbarSecondPartV-Buy{
+            display: none;
+        }
+
+            }

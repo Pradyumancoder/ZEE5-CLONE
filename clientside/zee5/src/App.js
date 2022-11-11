@@ -2,14 +2,14 @@ import "./AppGc.css";
 
 import AllRoutes from "./Routes/AllRoutes";
 import Navbar from "./components-v/NavbarV";
+import FooterV from "./components-v/FooterV"
 function App() {
   return (
     <div className="App">
-      <Navbar />
-
-      <AllRoutes></AllRoutes>
-      <h1>Footer</h1>
-    </div>
+      
+<Navbar />
+      {/* <AllRoutes></AllRoutes> */}
+        </div>
   );
 }
 
