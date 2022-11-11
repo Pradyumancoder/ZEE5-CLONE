@@ -1,10 +1,16 @@
 import { Box, Button, Input, Text, Flex,Stack,Image } from '@chakra-ui/react'
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 const style = {
     width: "328px",
     margin: 'auto'
 }
 const AccountInfo = () => {
+    const navigate = useNavigate()
+
+    const handleAccountInfo = ()=>{
+        navigate("/myaccount/payment")
+    }
     return (
         <div style={style} className="account-info">
             <Text w="880px" m="auto" textAlign="start" >Step 2 of 3</Text>
@@ -14,7 +20,9 @@ const AccountInfo = () => {
                 <Text color="white" textAlign="start" fontSize="14px">Email ID Or Mobile Number</Text>
                 <Text color="black" m=" -10px auto 2rem auto" textAlign="start" fontSize="18px" fontWeight="bold">Email ID Or Mobile Number</Text>
                 <Input h="48px" placeholder='Email ID Or Mobile Number' size='md' />
+                {/* onClick event for navigate to the payment page */}
                 <Button
+                onClick={handleAccountInfo}
                     size='md'
                     height='48px'
                     width='full'

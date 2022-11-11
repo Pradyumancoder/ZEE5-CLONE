@@ -5,10 +5,17 @@ import {RiVipCrownFill} from "react-icons/ri"
 
 import LeftBoxCartItem from '../../Components-Rk/LeftBoxCartItem'
 import { Badge, Flex, HStack, Text, Box, Center } from '@chakra-ui/react'
+import { useNavigate } from 'react-router-dom'
 // import { Box, HStack } from '@chakra-ui/react';
 
 
 const Subscription = () => {
+    const navigate = useNavigate()
+
+
+    const handleSubClick = ()=>{
+        navigate("/myaccount/accountinfo")
+    }
     return (
         <>
         <Text w="880px" m="auto" textAlign="start" >Step 1 of 3</Text>
@@ -78,7 +85,8 @@ const Subscription = () => {
                 <Center h="16px" m="20px 0" w="380px">
                     Have a code ?
                 </Center>
-                <Center borderRadius="10px" fontSize="14px" color="white" h="51px" bg="#8230C6" w={{ base: '90%', md: '90%', lg: '380px' }} cursor="pointer">
+                {/* here we put onClick event on clicking we go to the account-info page */}
+                <Center onClick={handleSubClick} borderRadius="10px" fontSize="14px" color="white" h="51px" bg="#8230C6" w={{ base: '90%', md: '90%', lg: '380px' }} cursor="pointer">
                     continue with ₹699
                 </Center>
             
