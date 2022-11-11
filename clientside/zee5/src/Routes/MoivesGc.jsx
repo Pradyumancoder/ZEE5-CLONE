@@ -21,20 +21,14 @@ let ad = [
 ];
 
 const MoivesGc = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   let i = 0;
   useEffect(() => {
-    const interval = setInterval(() => {
-      setLoading(true);
-      i++;
-      if (i === 4) {
-        setLoading(false);
-
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
+    const timer = setTimeout(() => {
+      console.log("setTimeout:", i++);
+      setLoading(false);
+    }, 6000);
+    return () => clearTimeout(timer);
   }, []);
   return loading ? (
     <SkeletonGc></SkeletonGc>
