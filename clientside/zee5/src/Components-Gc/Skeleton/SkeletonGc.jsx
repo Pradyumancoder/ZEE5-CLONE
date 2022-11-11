@@ -119,11 +119,11 @@ const SkeletonGc = () => {
           </Box>
         ))}
       </Slider>
-      <Button isLoading loadingText="Loading...." colorScheme="teal" variant="outline" />
+      <Button isLoading loadingText="Loading...." colorScheme="teal"  variant="outline" />
 
       <Flex minWidth="max-content" justifyContent={"center"} alignItems="center" gap="2" m="auto">
         {content.map((item, index) => (
-          <Box key={index}>{item.ele}</Box>
+          <Box  key={index}>{item.ele}</Box>
         ))}
       </Flex>
 
