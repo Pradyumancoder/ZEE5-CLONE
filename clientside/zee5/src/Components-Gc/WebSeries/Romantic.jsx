@@ -15,7 +15,7 @@ function Romantic() {
 
       <Slider {...Settings}>
         {data.slice(12, 22).map((item, index) => (
-          <VStack>
+          <VStack key={index}>
             <CardGc key={index} item={item} index={index} />
             <Text noOfLines={2}>{item.popupTitle}</Text>
           </VStack>

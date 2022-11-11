@@ -18,21 +18,17 @@ let ad = [
 ];
 
 const WebSeriesGc = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   let i = 0;
   useEffect(() => {
-    const interval = setInterval(() => {
-      setLoading(true);
-      i++;
-      if (i === 4) {
-        setLoading(false);
+    const timer = setTimeout(() => {
 
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
+      console.log('setTimeout:',i++)
+      setLoading(false);
+    }, 6000);
+    return () => clearTimeout(timer);
   }, []);
+ 
   return loading ? (
     <SkeletonGc></SkeletonGc>
   ) : (
