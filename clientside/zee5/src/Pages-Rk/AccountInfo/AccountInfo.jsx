@@ -1,14 +1,24 @@
 import { Box, Button, Input, Text, Flex,Stack,Image } from '@chakra-ui/react'
-import React from 'react'
+import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+const init = {
+    email:"",
+    password:""
+}
 const style = {
     width: "328px",
     margin: 'auto'
 }
 const AccountInfo = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const [userCred,setUserCred] = useState(init)
+    
+    const handleChange = (e)=>{
+        setUserCred({...userCred,[e.target.name]:e.target.value});
 
+    }
     const handleAccountInfo = ()=>{
+        // check crediential is exist or not 
         navigate("/myaccount/payment")
     }
     return (
@@ -19,9 +29,19 @@ const AccountInfo = () => {
             <Box borderRadius="10px" p="16px" bg="white" m="auto" w={{ base: '328px', md: "350px", lg: "400px" }} h="432px">
                 <Text color="white" textAlign="start" fontSize="14px">Email ID Or Mobile Number</Text>
                 <Text color="black" m=" -10px auto 2rem auto" textAlign="start" fontSize="18px" fontWeight="bold">Email ID Or Mobile Number</Text>
-                <Input h="48px" placeholder='Email ID Or Mobile Number' size='md' />
+                <Input
+                onChange={handleChange}
+                value={userCred.email}
+                 name="email"
+                 color="black" h="48px" placeholder='Email ID Or Mobile Number' size='md' />
+                <Input
+                onChange={handleChange} 
+                value={userCred.password} 
+                name="password"
+                color="black" mt="1.2rem" h="48px" placeholder='Password' size='md' />
                 {/* onClick event for navigate to the payment page */}
                 <Button
+                disabled={userCred.email.length==0 || userCred.password.length<=4}
                 onClick={handleAccountInfo}
                     size='md'
                     height='48px'
