@@ -10,12 +10,12 @@ function PopularSeries() {
   return (
     <Box mx={5} mt={1} textAlign="left">
       <Text fontSize="2xl" fontWeight="bold" my={7} className="z-0">
-     Trending Series Right Now
+        Trending Series Right Now
       </Text>
 
       <Slider {...Settings}>
         {data.slice(0, 12).map((item, index) => (
-          <VStack>
+          <VStack key={index}>
             <CardGc key={index} item={item} index={index} />
             <Text noOfLines={2}>{item.popupTitle}</Text>
           </VStack>
