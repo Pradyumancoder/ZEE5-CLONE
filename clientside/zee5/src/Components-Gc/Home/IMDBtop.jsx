@@ -1,8 +1,7 @@
-import { Box, Grid, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
-import Card1Gc from "./common/Card1Gc";
-import CardGc from "./common/CardGc";
-import { Settings } from "../Components-Gc/common/settings";
+import CardGc from "../common/CardGc";
+import { Settings } from "../common/settings";
 let data = [
   {
     url: "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5145092/portrait/1920x7702e1f16a2d4f4479284dabf671658897e.jpg",

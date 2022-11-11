@@ -1,8 +1,9 @@
 import React from 'react'
+import SkeletonGc from '../Components-Gc/Skeleton/SkeletonGc'
 
 const NewsGc = () => {
   return (
-    <div>NewsGc</div>
+    <SkeletonGc></SkeletonGc>
   )
 }
 

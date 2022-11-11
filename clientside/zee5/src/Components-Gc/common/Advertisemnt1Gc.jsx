@@ -1,5 +1,5 @@
-import { Box, Image } from "@chakra-ui/react";
-import React from "react";
+import { Box, Image, Skeleton } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
 
 let url = [
   "https://tpc.googlesyndication.com/simgad/17079171175691928473",
@@ -10,7 +10,6 @@ let url = [
 ];
 
 const Advertisemnt1Gc = ({ url }) => {
-
   return (
     <Box width={"90%"} textAlign="center" m={"auto"} mt={"4rem"}>
       <Image className="animate-pulse" m={"auto"} src={url} alt="Dan Abramov" />

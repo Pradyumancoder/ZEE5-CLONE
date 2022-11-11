@@ -1,17 +1,20 @@
 import { Box } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Advertisemnt1Gc from "../Components-Gc/common/Advertisemnt1Gc";
-import IMDBtop from "../Components-Gc/IMDBtop";
-import LatestEpi from "../Components-Gc/LatestEpi";
-import NavbarGc from "../Components-Gc/NavBarGc";
-import PopularMoives from "../Components-Gc/PopularMoives";
-import RentandWatch from "../Components-Gc/RentandWatch";
-import SliderCardGc from "../Components-Gc/SliderCardGc";
-import Top10Movies from "../Components-Gc/Top10Movies";
-import TrendingNearYouGc from "../Components-Gc/TrendingNearYouGc";
-import WebSeires from "../Components-Gc/WebSeires";
+import SliderCardGc from "../Components-Gc/Home/SliderCardGc";
+import TrendingNearYouGc from "../Components-Gc/Home/TrendingNearYouGc";
 
-let ad= [
+import PopularMoives from "../Components-Gc/Home/PopularMoives";
+import Top10Movies from "../Components-Gc/Home/Top10Movies";
+
+import LatestEpi from "../Components-Gc/Home/LatestEpi";
+import WebSeires from "../Components-Gc/Home/WebSeires";
+
+import IMDBtop from "../Components-Gc/Home/IMDBtop";
+import RentandWatch from "../Components-Gc/Home/RentandWatch";
+import SkeletonGc from "../Components-Gc/Skeleton/SkeletonGc";
+
+let ad = [
   "https://tpc.googlesyndication.com/simgad/17079171175691928473",
   "https://tpc.googlesyndication.com/simgad/13686292933159277317",
   "https://tpc.googlesyndication.com/simgad/12632166758537980946",
@@ -19,7 +22,25 @@ let ad= [
   "https://tpc.googlesyndication.com/simgad/11665320451917271715",
 ];
 const HomeGc = () => {
-  return (
+  const [loading, setLoading] = useState(false);
+  let i = 0;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoading(true);
+      i++;
+      if (i === 4) {
+        setLoading(false);
+
+        clearInterval(interval);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return loading ? (
+    <SkeletonGc></SkeletonGc>
+  ) : (
     <Box my={7}>
       <SliderCardGc></SliderCardGc>
       <TrendingNearYouGc></TrendingNearYouGc>
@@ -34,8 +55,6 @@ const HomeGc = () => {
       <Advertisemnt1Gc url={ad[3]}></Advertisemnt1Gc>
       <IMDBtop></IMDBtop>
       <RentandWatch></RentandWatch>
-
-      
     </Box>
   );
 };

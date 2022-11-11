@@ -1,8 +1,8 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import CardGc from "./common/CardGc";
+import CardGc from "../common/CardGc"
 import Slider from "react-slick";
-import { Settings } from "../Components-Gc/common/settings";
+import { Settings } from "../common/settings";
 
 let data = [
   {

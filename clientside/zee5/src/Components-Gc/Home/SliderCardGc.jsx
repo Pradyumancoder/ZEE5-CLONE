@@ -1,6 +1,6 @@
 import React from "react";
 import { FaCrown, FaPlay } from "react-icons/fa";
-import SliderWrapper from "../_SlickSliderStyle";
+import SliderWrapper from "../../_SlickSliderStyle";
 
 import Slider from "react-slick";
 let data = [

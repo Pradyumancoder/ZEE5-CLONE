@@ -1,28 +1,5 @@
+import React from 'react'
 
-
-
-
-import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { FaCrown } from "react-icons/fa";
-import CardGc from "./common/CardGc";
-import Slider from "react-slick";
-import { Settings } from "../Components-Gc/common/settings"
-
-
-function Top10Movies() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: false,
-        speed:300,
-        autoplaySpeed: 2000,
-        cssEase: "linear"
-      };
-//    const [data, setData] = useState([]);
 let data=[
     {
     "url": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5177236/portrait/1920x770cd788cc8f66e4f27accee7da64d1e9cd.jpg",
@@ -76,41 +53,11 @@ let data=[
     }
     ]
 
-//    useEffect(() => {
-//       axios
-//          .get(`https://fake-restful-api.onrender.com/zeeTop10`)
-//          .then((res) => {
-//             setData(res.data);
-//          });
-//    }, []);
 
-   return (
-      <Box m={5} mt={20} textAlign="left">
-         <Text fontSize="2xl" fontWeight="bold" >
-            Top 10 in India
-         </Text>
-         {/* <Grid templateColumns="repeat(10, 1fr)" gap={2} my={4}> */}
-         <Slider   {...Settings}>
-
-            {data.map((item, index) => (
-               <GridItem key={index} cursor="pointer" position="relative">
-                  {/* <Image
-                     src={item.url}
-                     alt={item.popupTitle}
-                     borderRadius="md"
-                     w="100%"
-                  /> */}
-                    <CardGc item={item} index={index} />
-                  {/* <Box className="card-icon" top="7px" left="7px">
-                     <FaCrown />
-                  </Box> */}
-                  <Text className="top-ten-numbers absolute top-10 right-10 invisible md:visible">{item.top10Numbers}</Text>
-               </GridItem>
-            ))}
-         </Slider>
-         {/* </Grid> */}
-      </Box>
-   );
+const BrowseByGenre = () => {
+  return (
+    <div>BrowseByGenre</div>
+  )
 }
 
-export default Top10Movies;
+export default BrowseByGenre
