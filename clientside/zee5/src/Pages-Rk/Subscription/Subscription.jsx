@@ -1,16 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Subscription.css"
 import { GrPersonalComputer } from "react-icons/gr"
 import {RiVipCrownFill} from "react-icons/ri"
 
 import LeftBoxCartItem from '../../Components-Rk/LeftBoxCartItem'
-import { Badge, Flex, HStack, Text, Box, Center } from '@chakra-ui/react'
+import { Badge, Flex, HStack, Text, Box, Center, Checkbox } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 // import { Box, HStack } from '@chakra-ui/react';
 
 
 const Subscription = () => {
+    const [checkItem,setCheckedItems] = useState(false)
     const navigate = useNavigate()
+    console.log(checkItem)
 
 
     const handleSubClick = ()=>{
@@ -48,7 +50,8 @@ const Subscription = () => {
                         <h2>12 months plan</h2>
                         <HStack>
                             <Text as='del'>₹999</Text>
-                            <Text fontSize='27px' color='black'>₹666</Text>
+                            <Text fontSize='27px' color='black'> ₹699</Text>
+                            {!checkItem && <Checkbox defaultChecked></Checkbox>}
                         </HStack>
                     </Flex>
                     <Box fontWeight="light" color="black.100" mt="-10px" textAlign="start" fontSize="12px">Effective Price ₹58/months</Box>
@@ -68,7 +71,9 @@ const Subscription = () => {
                         <Text>3 months plan</Text>
                         <HStack>
                             <Flex alignItems="center">₹ <Text fontWeight="bold" fontSize="25px">399</Text></Flex>
-                            <Box bg="white" border="1px solid gray" borderRadius="50%" boxSize="18px"></Box>
+                            <Checkbox
+                              onChange={(e) => setCheckedItems(e.target.checked)}
+                            boxSize="18px"></Checkbox>
                         </HStack>
                     </Flex>
                 </Flex>
@@ -87,7 +92,7 @@ const Subscription = () => {
                 </Center>
                 {/* here we put onClick event on clicking we go to the account-info page */}
                 <Center onClick={handleSubClick} borderRadius="10px" fontSize="14px" color="white" h="51px" bg="#8230C6" w={{ base: '90%', md: '90%', lg: '380px' }} cursor="pointer">
-                    continue with ₹699
+                    continue with { checkItem?" ₹399": " ₹699"}
                 </Center>
             
             </div>
