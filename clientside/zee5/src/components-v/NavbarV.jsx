@@ -38,8 +38,8 @@ function Navbar(){
             <Box className="NavbarSecondPartV-Lan" ><Flex><Text>A</Text><Text className="NavbarSecondPartV-LanHindi">अ</Text></Flex>
             
             </Box>
-            <Button bg={"black"} className="NavbarSecondPartV-Login" border={"1px solid white"}>LOGIN</Button>
-            <Button bg={"darkorchid"} className="NavbarSecondPartV-Buy" border={"1px solid darkorchid"}><FaCrown className="Crown"/><Text>BUY PLAN</Text></Button>
+           <Box className="NavbarSecondPartV-Login"> <Button bg={"black"}  border={"1px solid white"}>LOGIN</Button></Box>
+           <Box className="NavbarSecondPartV-Buy"> <Button bg={"darkorchid"}  border={"1px solid darkorchid"}><FaCrown className="Crown"/><Text>BUY PLAN</Text></Button></Box>
             <Box className="NavbarSecondPartV-Menu" ><GiHamburgerMenu size={"20"} /></Box>
             </Flex>
             </Box>
