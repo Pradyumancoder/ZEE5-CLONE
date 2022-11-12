@@ -18,7 +18,7 @@ const handleChange=(e)=>{
 
 const handleSubmit=(e)=>{
 e.preventDefault();
-axios.post("",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
+axios.post("https://vidfy.up.railway.app/movies",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
 
 }
 return(

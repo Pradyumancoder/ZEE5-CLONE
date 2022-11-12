@@ -60,7 +60,8 @@ font-size: small;
 background-color:darkorchid;
 margin-top: 10px;
 font-size: small;
-    }
+border-radius: 5px;
+}
     .NavbarSecondPartV-Menu{
 color: white;
 margin-top: 10px;
@@ -115,3 +116,4 @@ padding-bottom: 5px;
         }
 
             }
+            
