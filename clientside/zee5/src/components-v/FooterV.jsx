@@ -94,10 +94,10 @@ return (<Box  paddingLeft={"30px"}>
 <Box>
     <Flex justifyContent={"space-evenly"} gap={"1rem"} paddingRight={"30px"} >
         <Box>Contact with us</Box>
-        <Box><AiFillFacebook /></Box>
-        <Box><AiFillInstagram /></Box>
-        <Box><AiOutlineTwitter /></Box>
-        <Box><AiFillYoutube /></Box>
+        <Box><AiFillFacebook size="20px" /></Box>
+        <Box><AiFillInstagram  size="20px"/></Box>
+        <Box><AiOutlineTwitter  size="20px"/></Box>
+        <Box><AiFillYoutube size="20px"/></Box>
     </Flex>
 </Box>
     </Flex>
