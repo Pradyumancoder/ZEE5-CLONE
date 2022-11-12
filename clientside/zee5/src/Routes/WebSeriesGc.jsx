@@ -25,7 +25,7 @@ const WebSeriesGc = () => {
 
       console.log('setTimeout:',i++)
       setLoading(false);
-    }, 6000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
  

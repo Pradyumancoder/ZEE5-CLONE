@@ -28,7 +28,7 @@ const TvShowsGc = () => {
     const timer = setTimeout(() => {
       console.log("setTimeout:", i++);
       setLoading(false);
-    }, 6000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
   return loading ? (

@@ -30,7 +30,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
         </>
       ),
     },
@@ -38,7 +38,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
         </>
       ),
     },
@@ -46,7 +46,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
         </>
       ),
     },
@@ -54,7 +54,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
         </>
       ),
     },
@@ -62,7 +62,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
         </>
       ),
     },
@@ -70,7 +70,58 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="300px" w="200px" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="300px" w="200px" />
+        </>
+      ),
+    },
+  ];
+
+  let content1 = [
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="300px" />
+        </>
+      ),
+    },
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="400px" />
+        </>
+      ),
+    },
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="400px" />
+        </>
+      ),
+    },
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="400px" />
+        </>
+      ),
+    },
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="400px" />
+        </>
+      ),
+    },
+    {
+      id: 1,
+      ele: (
+        <>
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="100px" w="400px" />
         </>
       ),
     },
@@ -80,7 +131,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="400px" w={"90%"} m="auto" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="400px" w={"90%"} m="auto" />
         </>
       ),
     },
@@ -88,7 +139,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="400px" w={"90%"} m="auto" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="400px" w={"90%"} m="auto" />
         </>
       ),
     },
@@ -96,7 +147,7 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="400px" w={"90%"} m="auto" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="400px" w={"90%"} m="auto" />
         </>
       ),
     },
@@ -104,14 +155,14 @@ const SkeletonGc = () => {
       id: 1,
       ele: (
         <>
-          <Skeleton startColor="blue.800" endColor="gray.500" height="400px" w={"90%"} m="auto" />
+          <Skeleton startColor="blue.800" borderRadius={"10px"} endColor="gray.500" height="400px" w={"90%"} m="auto" />
         </>
       ),
     },
   ];
 
   return (
-    <Stack w={"90%"} m="auto">
+    <Stack w={"90%"} m="auto" gap="4">
       <Slider {...settings2}>
         {slide.map((item, index) => (
           <Box ml="4" key={index}>
@@ -119,15 +170,15 @@ const SkeletonGc = () => {
           </Box>
         ))}
       </Slider>
-      <Button isLoading loadingText="Loading...." colorScheme="teal"  variant="outline" />
+      <Button isLoading loadingText="Loading...." colorScheme="teal" variant="outline" w={"100%"} />
 
       <Flex minWidth="max-content" justifyContent={"center"} alignItems="center" gap="2" m="auto">
         {content.map((item, index) => (
-          <Box  key={index}>{item.ele}</Box>
+          <Box key={index}>{item.ele}</Box>
         ))}
       </Flex>
 
-      <Skeleton startColor="blue.800" endColor="gray.500">
+      <Skeleton w={"100%"} startColor="blue.800" endColor="gray.500" borderRadius={"10px"}>
         <div>contents wrapped</div>
         <div>won't be visible</div>
       </Skeleton>
@@ -135,14 +186,14 @@ const SkeletonGc = () => {
       <Box m="auto" ml="2">
         <Slider {...settings}>
           {content.map((item, index) => (
-            <Box ml="4" key={index}>
+            <Box ml="4" key={index} borderRadius={"50px"}>
               {item.ele}
             </Box>
           ))}
         </Slider>
       </Box>
 
-      <Skeleton startColor="blue.800" endColor="gray.500">
+      <Skeleton startColor="blue.800" endColor="gray.500" borderRadius={"10px"}>
         <div>contents wrapped</div>
         <div>contents wrapped</div>
 

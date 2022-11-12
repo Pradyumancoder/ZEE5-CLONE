@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import VideoPlay from "../Components-Rk/VideoPlay";
 import Login from "../components-v/Login/LoginV";
 import Signup from "../components-v/Signup/SignupV";
 import AccountInfo from "../Pages-Rk/AccountInfo/AccountInfo";
@@ -20,12 +21,14 @@ const AllRoutes = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/" element={<HomeGc />} />
       <Route path="/movies" element={<MoviesGc />} />
-      <Route path="/news" element={<NewsGc />} />
+      <Route path="/news/" element={<NewsGc />} />
       <Route path="/tvShows" element={<TvShowsGc />} />
       <Route path="/webseries" element={<WebSeriesGc />} />
       <Route path="/myaccount/subscription" element={<Subscription />} />
       <Route path="/myaccount/accountinfo" element={<AccountInfo />} />
       <Route path="/myaccount/payment" element={<Payment />} />
+      <Route path="/video/play/:title" element={<VideoPlay />} />
+
     </Routes>
   );
 };

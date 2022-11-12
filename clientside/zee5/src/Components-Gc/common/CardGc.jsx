@@ -1,6 +1,7 @@
 import { Box, Button, Flex, GridItem, Image, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { AiOutlineShareAlt } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import { FaCrown, FaPlay } from "react-icons/fa";
 
 function CardGc({ item, index ,prem}) {
@@ -23,6 +24,7 @@ function CardGc({ item, index ,prem}) {
       onMouseLeave={() => setState(false)}
       className="hover:z-10 mt-10 first-letter:overflow-hidden my-4 hover:scale-105 duration-150" onClick={()=>hanldeClick(item)}
     >
+    <Link to={`/video/play/${item.popupTitle}`}>
       <Box>
         <Image src={item.url} alt={item.popupTitle} borderRadius="lg" w="100%" />
        { prem&&<Box p={1} pos={"absolute"} top={3} left={3} bg={"whitesmoke"} color={"red"} borderRadius={50}>
@@ -90,6 +92,7 @@ function CardGc({ item, index ,prem}) {
           </VStack>
         </VStack>
       )}
+      </Link>
     </GridItem>
   );
 }
