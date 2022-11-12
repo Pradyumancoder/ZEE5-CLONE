@@ -1,0 +1,16 @@
+.search{
+    position:absolute;
+    width:350px;
+    background-color:#0f0617;
+    z-index: 100;
+    top:60px;
+    left:680px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.search>p{
+    margin-top:10px;
+}

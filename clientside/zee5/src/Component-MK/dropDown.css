@@ -1,0 +1,41 @@
+.dropDown-main {
+    background-color:#0f0617 ;
+    position: absolute;
+    width:350px;
+    top:100px;
+    right:5px;
+    z-index: 100;
+}
+.menudiv{
+    display: flex;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(204, 207, 210);
+    margin-top:10px;
+
+}
+.icon{
+    
+    color: white;
+    background-color:rgb(87, 74, 74);
+    font-size:20px;
+}
+
+
+.homep{
+    background-color: #35273e;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+
+.menuver{
+text-align:center;
+padding:20px;
+
+}

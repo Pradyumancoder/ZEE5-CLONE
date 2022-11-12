@@ -74,11 +74,11 @@ margin-top: 10px;
     }
 
     
-    @media only screen and (max-width: 479px) {
+    @media only screen and (max-width: 579px) {
 
         .NavbarSecondpartV-Search{
-            width: 75%;
-            margin-left: -15%;
+            width: 70%;
+            margin-left: -10%;
 padding-bottom: 5px;
         }
         .NavbarFirstPartV-Home{
@@ -117,3 +117,50 @@ padding-bottom: 5px;
 
             }
             
+
+
+            @media all and (min-width: 480px ) and (max-width: 880px ) {
+
+                .NavbarSecondpartV-Search{
+                    width: 70%;
+                    margin-left: -10%;
+        padding-bottom: 5px;
+                }
+                .NavbarFirstPartV-Home{
+                    display: block;
+                    width: min-content;
+
+                }
+                .NavbarFirstPartV-Tv{
+                    display:block;
+                }
+                .NavbarFirstPartV-Movies{
+                    display: none;
+                }
+                .NavbarFirstPartV-Option{
+                    display: none;
+                }
+                .NavbarSecondPartV-Lan{
+                    display: none;
+                }
+                .NavbarMainV{
+                    background-color:black;
+                    font-weight:300;
+                    justify-content: space-between;
+                    padding-top: 3px;
+                    padding-left: 3px;
+                    padding-bottom: 3px;
+                }
+                .NavbarFirstPartV-Icon{
+                    height: 30px;
+                    margin-top: 10px;
+                }
+                .NavbarSecondPartV-Login{
+                    display:none
+                }
+                .NavbarSecondPartV-Buy{
+                    display: none;
+                }
+        
+                    }
+                    

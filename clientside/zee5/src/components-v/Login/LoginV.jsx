@@ -18,8 +18,7 @@ const handleChange=(e)=>{
 
 const handleSubmit=(e)=>{
 e.preventDefault();
-axios.post("https://vidfy.up.railway.app/movies",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
-
+axios.post("https://vidfy.up.railway.app/users/login",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
 }
 return(
     <Box  >
@@ -42,7 +41,7 @@ return(
             <br />
             <Button w={"100%"} bg={"none"}  border={"1px solid gray"} type="submit" marginTop={"30px"}  paddingBottom={"15px"} paddingTop={"15px"}>Login </Button>
         </form>
-        <Box marginTop={"30px"}>New To ZEE5? <Link>Register</Link></Box>
+        <Link to="/signup"><Box marginTop={"30px"}>New To ZEE5? <Text color={"blue"}>Register</Text></Box></Link>
         </Box>
         </Box>
 

@@ -12,11 +12,8 @@ function App() {
       {/* <Navbar /> */}
 
       <AllRoutes></AllRoutes>
-      <Header></Header>
-     <MiddleSection></MiddleSection> 
-       <Playshow ></Playshow>
-   
-    </div>
+
+
 
 
   );

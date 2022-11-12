@@ -1,6 +1,6 @@
 .footerBottomSection{
     align-items: left;
-
+flex:wrap;
     gap: 4rem;
     color:silver;
     
@@ -52,4 +52,11 @@
     
     font-size: small;
     text-align: left;
+}
+
+@media only screen and (max-width: 479px) {
+.Popular-LIVE-TV-Channels{
+    display: none;
+}
+
 }
