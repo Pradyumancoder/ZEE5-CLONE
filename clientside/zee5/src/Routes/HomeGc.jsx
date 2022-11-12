@@ -29,7 +29,7 @@ const HomeGc = () => {
 
       console.log('setTimeout:',i++)
       setLoading(false);
-    }, 6000);
+    }, 25000);
     return () => clearTimeout(timer);
   }, []);
 
