@@ -26,16 +26,11 @@ const handleChange=(e)=>{
 }
 
 const handleSubmit=(e)=>{
-<<<<<<< HEAD
     e.preventDefault();
     // console.log({...user})
     dispatch(authSignInSucess({...user}))
 // axios.post("https://vidfy.up.railway.app/movies",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
 
-=======
-e.preventDefault();
-axios.post("https://vidfy.up.railway.app/users/login",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
->>>>>>> 3bbca98a599b1e6195bb9d2ebf4f4af03589d671
 }
 return(
     <Box  >

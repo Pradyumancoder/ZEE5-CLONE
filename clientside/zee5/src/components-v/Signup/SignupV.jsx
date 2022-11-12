@@ -27,13 +27,8 @@ const handleChange=(e)=>{
 
 const handleSubmit=(e)=>{
 e.preventDefault();
-<<<<<<< HEAD
 dispatch(authSignUpSucess({...user}))
 // console.log({...user})
-=======
-axios.post("https://vidfy.up.railway.app/users/signup",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
-console.log("sadf")
->>>>>>> 3bbca98a599b1e6195bb9d2ebf4f4af03589d671
 }
 console.log(user)
 return(
@@ -51,11 +46,7 @@ return(
         <Box w={"40px"} marginLeft={"45%"} backgroundColor={""} color="white" borderRadius={"50%"} padding={"4px"}>or</Box>
     <Stack >
         <form onSubmit={handleSubmit} >
-<<<<<<< HEAD
         <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type={"text"} border={"none"}  marginTop={"30px"}  value={user.name} name="name" placeholder="Enter Your Name" /></Box>
-=======
-        <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type="text" border={"none"}  marginTop={"30px"}  value={user.name} name="name" placeholder="Enter Your Name" /></Box>
->>>>>>> 3bbca98a599b1e6195bb9d2ebf4f4af03589d671
         <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type="text"  border={"none"} value={user.email}  marginTop={"30px"} name="email" placeholder="Enter email id" /></Box>
         <Box  borderBottom={"1px solid gray"} marginBottom={"15px"}><Input onChange={handleChange} value={user.password} type="password" border={"none"} name="password" marginTop={"30px"}  placeholder="Create password" /></Box>
            
