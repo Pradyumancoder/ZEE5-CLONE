@@ -27,29 +27,35 @@ const handleChange=(e)=>{
 
 const handleSubmit=(e)=>{
 e.preventDefault();
+<<<<<<< HEAD
 dispatch(authSignUpSucess({...user}))
 // console.log({...user})
+=======
+axios.post("https://vidfy.up.railway.app/users/signup",{email:user.email,password:user.password}).then((response)=>{console.log(response.data)}).catch((e)=>{console.log(e)})
+console.log("sadf")
+>>>>>>> 3bbca98a599b1e6195bb9d2ebf4f4af03589d671
 }
-
+console.log(user)
 return(
     <Box  >
         <Stack>
         <Box className="LoginMainBox" >
-            <Box className="LoginInnerBox">            <Heading fontSize={"larger"} marginBottom={"20px"}>Create a new account</Heading>
+            <Box className="LoginInnerBox"><Heading fontSize={"larger"} marginBottom={"20px"}>Create a new account</Heading>
         <Box border="1px solid #0f0617" >
             <Text  marginBottom={"20px"} fontSize={"xlg"} textalign={"justify"} fontweight={"light"}>Create an account to continue enjoying uninterrupted video and personalised experience</Text>
             </Box>
             <Box marginBottom={"20px"} marginTop={"30px"} className="LoginIcons">
-   
             <Flex justifyContent={"center"} backgroundColor={"white"} padding={"6px"} borderRadius={"5px"}>
-            
-            
             <Box backgroundColor={"white"} color="black" borderRadius={"50%"} padding={"5px"}><FcGoogle size="25px" /></Box><Box color="red" paddingTop={"5px"} fontweight={"bold"}>Sign in</Box>
             </Flex></Box>
         <Box w={"40px"} marginLeft={"45%"} backgroundColor={""} color="white" borderRadius={"50%"} padding={"4px"}>or</Box>
     <Stack >
         <form onSubmit={handleSubmit} >
+<<<<<<< HEAD
         <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type={"text"} border={"none"}  marginTop={"30px"}  value={user.name} name="name" placeholder="Enter Your Name" /></Box>
+=======
+        <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type="text" border={"none"}  marginTop={"30px"}  value={user.name} name="name" placeholder="Enter Your Name" /></Box>
+>>>>>>> 3bbca98a599b1e6195bb9d2ebf4f4af03589d671
         <Box borderBottom={"1px solid gray"}><Input onChange={handleChange} type="text"  border={"none"} value={user.email}  marginTop={"30px"} name="email" placeholder="Enter email id" /></Box>
         <Box  borderBottom={"1px solid gray"} marginBottom={"15px"}><Input onChange={handleChange} value={user.password} type="password" border={"none"} name="password" marginTop={"30px"}  placeholder="Create password" /></Box>
            
@@ -62,7 +68,6 @@ return(
         <Box marginTop={"30px"}>Already registered?  <Link >Login</Link></Box>
         </Box>
         </Box>
-
         </Stack>
     </Box>
 )

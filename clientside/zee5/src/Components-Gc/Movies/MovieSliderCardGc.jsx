@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import MovieData from "../common/datas/MovieData";
 
 let data = MovieData.sidleShowMovie;
-console.log("data:", data);
 
 const MovieSliderCardGc = () => {
   // var settings = {

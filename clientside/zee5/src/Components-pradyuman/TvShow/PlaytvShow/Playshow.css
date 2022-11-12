@@ -1,0 +1,77 @@
+.play-pra{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    
+}
+.flex-pra{
+
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:10px;
+}
+.pra-001{
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+}
+.pra-text005{
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: 700;
+    font-style: normal;
+    font-family:NotoSansBold,sans-serif;
+    color: #ffffff;
+    margin-right:21rem;
+    margin-top: 40px;
+}
+.mid-pra3{
+cursor: pointer;
+color: red;   
+position:relative;
+right: 3rem;
+
+}
+
+.last-tv-pra{
+    cursor: pointer;
+position:relative;
+right: 14rem;
+}
+.shu-pra{
+    border: 2px solid red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:blue
+}
+.lakshmi-pra{
+    margin-right: 80px;
+    margin-top: 10px;
+}
+.hed-pra-009{
+    margin-left: 20rem;
+}
+.example-pta{
+    background-color:blackf;
+    width: 49rem;
+    overflow-y: scroll; 
+   
+ 
+}
+.example-pta::-webkit-scrollbar {
+    display: none;
+}
+.play-dis{
+    display: flex;
+   
+}
+.modal-shukla{
+  
+    margin-top: 80px;
+    background: white;
+    color:black;
+    height: 2px;
+    margin-left: -23rem;
+
+}
+

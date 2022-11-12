@@ -1,0 +1,18 @@
+.grid{
+    width:150px;
+    position:absolute;
+    
+    top:70px;
+    left:250px;
+    z-index: 100;
+    border-radius: 5px;
+    background-color: #0f0617;
+    padding:10px;
+}
+.grid>p{
+    margin-top:5px;
+    
+}
+.grid>p:hover {
+    border: 1px solid violet;
+}
