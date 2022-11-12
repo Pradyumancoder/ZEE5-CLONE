@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     border: 1px solid red;
+    
 }
 .flex-pra{
 
@@ -50,3 +51,27 @@ right: 14rem;
 .hed-pra-009{
     margin-left: 20rem;
 }
+.example-pta{
+    background-color:blackf;
+    width: 49rem;
+    overflow-y: scroll; 
+   
+ 
+}
+.example-pta::-webkit-scrollbar {
+    display: none;
+}
+.play-dis{
+    display: flex;
+   
+}
+.modal-shukla{
+  
+    margin-top: 80px;
+    background: white;
+    color:black;
+    height: 2px;
+    margin-left: -23rem;
+
+}
+

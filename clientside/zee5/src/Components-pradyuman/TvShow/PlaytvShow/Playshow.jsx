@@ -5,6 +5,10 @@ import { Stack, HStack, VStack } from '@chakra-ui/react'
 import "./Playshow.css"
 import TrendingNearYouGc from '../../../Components-Gc/Home/TrendingNearYouGc'
 import Trending from './Trending'
+import Addmodal from './Addmodal'
+import Top10Shows from '../../../Components-Gc/TvShow/Top10Shows'
+import TopRatingShow from '../../../Components-Gc/TvShow/TopRatingShow'
+import LatestEpiTvShow from '../../../Components-Gc/TvShow/LatestEpiTvShow'
 
 
 function Playshow() {
@@ -13,7 +17,7 @@ function Playshow() {
     <Flex>
         <div>
           <Box h="500px" w="60rem" bgColor="blue">
-          <AspectRatio  ratio={16/8.5}>
+          {/* <AspectRatio  ratio={16/8.5}>
   <iframe
     title='naruto'
     src='https://www.youtube.com/embed/QhBnZ6NPOY0'
@@ -28,14 +32,14 @@ function Playshow() {
   <Text fontSize='22px' marginRight="25rem" cursor="pointer" color="white" >Bhagya lakshmi </Text>
   <Text className='mid-pra3' fontSize='25px'>Virendra Gives Some Advice to Neelam </Text>
   <Text className='last-tv-pra' fontSize='25px' >TV Shows </Text>
-  </Stack>
+  </Stack> */}
      </Box>
         </div>
 
 {/* divs */}
 
-    <div>
-  <Box h="500px" p='4' w="35rem" bgColor="yellow" overflow={'scroll'}>
+    <div className='play-dis'>
+  <Box className='example-pta' h="500px"  p='4' w="rem" bgColor="black" >
 
     <Trending></Trending>
        {/* <Box>
@@ -79,13 +83,22 @@ function Playshow() {
         </VStack>
         </scrollY>
 </Box> */}
+   
+    
       </Box>
-
+      <Box className='modal-shukla'>
+<Addmodal></Addmodal>
+</Box>
     </div>
 
- </Flex>
-<TrendingNearYouGc/>
+{/* modal use for adds */}
 
+
+ </Flex>
+{/* <TrendingNearYouGc/> */}
+<Top10Shows/>
+<TopRatingShow/>
+<LatestEpiTvShow/>
      </div>
 
   )
