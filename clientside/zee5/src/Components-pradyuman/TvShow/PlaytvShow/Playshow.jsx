@@ -1,5 +1,5 @@
 import React from 'react'
-import { AspectRatio, Box,Flex, GridItem, Image, Spacer, StackDivider, Text } from '@chakra-ui/react'
+import { AspectRatio, Box, Flex, GridItem, Image, Spacer, StackDivider, Text } from '@chakra-ui/react'
 import { Stack, HStack, VStack } from '@chakra-ui/react'
 
 import "./Playshow.css"
@@ -14,10 +14,10 @@ import LatestEpiTvShow from '../../../Components-Gc/TvShow/LatestEpiTvShow'
 function Playshow() {
   return (
     <div className='play-pra'>
-    <Flex>
+      <Flex>
         <div>
           <Box h="500px" w="60rem" bgColor="blue">
-          {/* <AspectRatio  ratio={16/8.5}>
+            {/* <AspectRatio  ratio={16/8.5}>
   <iframe
     title='naruto'
     src='https://www.youtube.com/embed/QhBnZ6NPOY0'
@@ -33,16 +33,17 @@ function Playshow() {
   <Text className='mid-pra3' fontSize='25px'>Virendra Gives Some Advice to Neelam </Text>
   <Text className='last-tv-pra' fontSize='25px' >TV Shows </Text>
   </Stack> */}
-     </Box>
+          </Box>
         </div>
 
-{/* divs */}
+        {/* divs */}
 
-    <div className='play-dis'>
-  <Box className='example-pta' h="500px"  p='4' w="rem" bgColor="black" >
+        <div className='play-dis'>
+          <Box className='example-pta' h="500px" p='4' w="rem" bgColor="black" >
 
-    <Trending></Trending>
-       {/* <Box>
+            <Trending></Trending>
+            <Trending></Trending>
+            {/* <Box>
      
      <scrollY>
           <VStack
@@ -83,23 +84,23 @@ function Playshow() {
         </VStack>
         </scrollY>
 </Box> */}
-   
-    
-      </Box>
-      <Box className='modal-shukla'>
-<Addmodal></Addmodal>
-</Box>
+
+
+          </Box>
+          <Box className='modal-shukla'>
+            {/* <Addmodal></Addmodal> */}
+          </Box>
+        </div>
+
+        {/* modal use for adds */}
+
+
+      </Flex>
+      {/* <TrendingNearYouGc/> */}
+      <Top10Shows />
+      <TopRatingShow />
+      <LatestEpiTvShow />
     </div>
-
-{/* modal use for adds */}
-
-
- </Flex>
-{/* <TrendingNearYouGc/> */}
-<Top10Shows/>
-<TopRatingShow/>
-<LatestEpiTvShow/>
-     </div>
 
   )
 }

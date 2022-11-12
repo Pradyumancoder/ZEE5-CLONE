@@ -48,7 +48,7 @@ const Payment = () => {
     const bg = colors[tabIndex]
 
     return (
-        <Box>
+        <Box m="2rem 0 10rem 0">
             <Text w={{ base: "326px", md: "326px", lg: "798px" }} m="auto" textAlign="start" >Step 3 of 3</Text>
             <Text w={{ base: "326px", md: "326px", lg: "798px" }} m=" -10px auto 6px auto" textAlign="start" fontSize="30px" >Make Payment</Text>
             <Flex

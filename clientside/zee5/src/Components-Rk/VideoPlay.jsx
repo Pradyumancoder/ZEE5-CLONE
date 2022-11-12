@@ -10,6 +10,11 @@ import React, { useState } from 'react'
 import { Grid } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import axios  from 'axios';
+import Top10Shows from '../Components-Gc/TvShow/Top10Shows'
+import TopRatingShow from '../Components-Gc/TvShow/TopRatingShow'
+import LatestEpiTvShow from '../Components-Gc/TvShow/LatestEpiTvShow'
+import Trending from "../Components-pradyuman/TvShow/PlaytvShow/Trending"
+import { useParams } from "react-router-dom"
 
 const api_key = `AIzaSyABod8lOndkalv1saeCleLFmeS1gaOZPSU`
 let api_link = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=RRR&key=`
@@ -19,12 +24,14 @@ const VideoPlay = () => {
     const [myVideoId,setVideoId] = useState("IOcGS4D1tM0")
     const [toggle, setToggle] = useState(true)
     const { isOpen, onToggle } = useDisclosure();
+    const {title} = useParams("title")
+    console.log('hi',title)
     const handleToggle = () => {
         onToggle();
         setToggle(!toggle)
     }
     // useEffect(()=>{
-    //         axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=RRR&key=${api_key}`).then(res=>{
+    //         axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${title}&key=${api_key}`).then(res=>{
     //             res=res.data?.items[0]?.id?.videoId
     //           if(res) setVideoId(res);
     //         }).catch(err=>{
@@ -34,17 +41,17 @@ const VideoPlay = () => {
     // },[])
     return (
         <>
-            <SimpleGrid colomns={[1, 1, 2]}>
+            <Flex >
                 <Box w="821px" className="video-first-box">
                     <div>
                         <iframe id="video-player" width="821" height="425" src={`https://www.youtube.com/embed/${myVideoId}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <Box p={{ base: "1rem", md: "1.5rem", lg: "2rem" }}>
-                        <Text textAlign="left" m="16px 0 8px 0" fontSize="14px" fontWeight="bold" color="white" >Channi vs Chaina</Text>
-                        <Text textAlign="left" fontSize="19px" fontWeight="bold" color="#A785FF" >Movies  2011</Text>
+                        <Text textAlign="left" m="16px 0 8px 0" fontSize="14px" fontWeight="bold" color="white" >{title}</Text>
+                        <Text textAlign="left" fontSize="19px" fontWeight="bold" color="#A785FF" >Movies/Shows/News</Text>
                         <Flex gap="1rem">
-                            <Text fontSize="18px" fontWeight="bold"  >2:32min</Text>
-                            <Text fontSize="18px" fontWeight="bold" color="#A785FF">SciFi</Text>
+                            <Text fontSize="18px" fontWeight="bold"  >2min to 3hours</Text>
+                            <Text fontSize="18px" fontWeight="bold" color="#A785FF">Comedy/Drama</Text>
                             <Text fontSize="18px" fontWeight="bold" color="#A785FF">Action</Text>
                         </Flex>
                         <Flex
@@ -123,10 +130,16 @@ const VideoPlay = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box className="video-second-box" >
-
+                <Box w="400px" display="flex" className="video-second-box" >
+                    <Trending/>
+                    {/* <Trending/> */}
                 </Box>
-            </SimpleGrid>
+            </Flex>
+
+
+            <Top10Shows />
+      <TopRatingShow />
+      <LatestEpiTvShow />
 
         </>
     )
