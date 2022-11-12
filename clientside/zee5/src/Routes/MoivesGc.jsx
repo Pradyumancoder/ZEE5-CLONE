@@ -27,7 +27,7 @@ const MoivesGc = () => {
     const timer = setTimeout(() => {
       console.log("setTimeout:", i++);
       setLoading(false);
-    }, 25000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
   return loading ? (
