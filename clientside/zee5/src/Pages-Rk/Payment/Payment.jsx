@@ -1,3 +1,4 @@
+
 import { Box, Text, Flex, Input, Button, Tab, Tabs, TabList, TabPanels, TabPanel, useColorModeValue, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import {
     Accordion,
@@ -10,21 +11,41 @@ import { CgProfile } from "react-icons/cg"
 import { BsSearch } from "react-icons/bs"
 import React, { useState } from 'react'
 import { Image, Stack } from '@chakra-ui/react';
-
+const init = {
+    cardNo:"",
+    pinNo:""
+}
 const Payment = () => {
 
+    const [payDet,setPayDet] = useState(init)
+    
+    const handleChange = (e)=>{
+        setPayDet({...payDet,[e.target.name]:e.target.value});
+        console.log(payDet)
+
+    }
+    const paymentStep = ()=>{
+        
+        // check crediential is exist or not 
+        
+    }
+
     const colors = useColorModeValue(
-        ['white', 'teal.50', 'blue.50', 'red.50'],
+        ['white', 'white', 'white', 'white'],
         ['white', 'teal.900', 'blue.900', 'blue.900'],
     )
     const [tabIndex, setTabIndex] = useState(0)
     const bg = colors[tabIndex]
 
     return (
-        <Box >
+        <Box>
             <Text w={{ base: "326px", md: "326px", lg: "798px" }} m="auto" textAlign="start" >Step 3 of 3</Text>
             <Text w={{ base: "326px", md: "326px", lg: "798px" }} m=" -10px auto 6px auto" textAlign="start" fontSize="30px" >Make Payment</Text>
-            <Flex justify="space-between" m='auto' borderBottom="1px solid white" bg="pink" p={{ base: "16px 24px", md: "16px 24px", lg: "24px" }} w={{ base: "326px", md: "326px", lg: "798px" }} h={{ base: "73px", md: "73px", lg: "99px" }} >
+            <Flex
+                background="linear-gradient(90deg, rgba(255,233,252,1) 6%, rgba(255,251,254,1) 99%)"
+                justify="space-between" m='auto' borderBottom="1px solid white" p={{ base: "16px 24px", md: "16px 24px", lg: "24px" }}
+                 w={{ base: "326px", md: "326px", lg: "798px" }} 
+                 h={{ base: "73px", md: "73px", lg: "99px" }} >
                 <Box>
                     <Text textAlign="start" fontSize="19px" color="#333333">Premium</Text>
                     <Text fontWeight="bold" fontSize="16px" color="#828282">Premium 12 months</Text>
@@ -33,7 +54,11 @@ const Payment = () => {
                     <Flex color="black" alignItems="center">₹ <Text fontWeight="bold" fontSize="25px">699</Text></Flex>
                 </Flex>
             </Flex>
-            <Flex gap="10px" justify={{ base: 'start', md: "center", lg: 'center' }} alignItems='center' m="auto" bg="pink" p={{ base: "16px 24px", md: "16px 24px", lg: "24px" }} w={{ base: "326px", md: "326px", lg: "798px" }} h={{ base: "73px", md: "73px", lg: "73px" }} >
+            <Flex
+                background="linear-gradient(90deg, rgba(255,233,252,1) 6%, rgba(255,251,254,1) 99%)"
+                borderTop="1px solid gray"
+
+                gap="10px" justify={{ base: 'start', md: "center", lg: 'center' }} alignItems='center' m="auto" p={{ base: "16px 24px", md: "16px 24px", lg: "24px" }} w={{ base: "326px", md: "326px", lg: "798px" }} h={{ base: "73px", md: "73px", lg: "73px" }} >
                 <Text fontWeight="bold" fontSize="14px" color="#333333">Loged In</Text>
                 <Text fontSize="14px" color="#828282">8745983389</Text>
                 <CgProfile size="32px" color="gray" />
@@ -263,14 +288,15 @@ const Payment = () => {
                             </h2>
                             <AccordionPanel pb={4}>
                                 <Box>
-                                    <Text  mt="10px" fontSize="13px" textAlign="start">Enter card No Here</Text>
-                                    <Input variant="flushed" placeholder='card number' size='lg' pb="0" />
+                                    <Text mt="10px" fontSize="13px" textAlign="start">Enter card No Here</Text>
+                                    <Input onChange={handleChange} name="cardNo" value={payDet.cardNo} variant="flushed" placeholder='card number' size='lg' pb="0" />
                                 </Box>
                                 <Box>
-                                    <Text  mt="10px" fontSize="13px" textAlign="start">PIN</Text>
-                                    <Input variant="flushed" placeholder='pin' size='lg' pb="0" />
+                                    <Text mt="10px" fontSize="13px" textAlign="start">PIN</Text>
+                                    <Input onChange={handleChange} name="pinNo" value={payDet.pinNo} variant="flushed" placeholder='pin' size='lg' pb="0" />
                                 </Box>
                                 <Button
+                                onClick={paymentStep}
                                     textAlign="start"
                                     size='md'
                                     height='48px'
