@@ -6,16 +6,22 @@ import {RiVipCrownFill} from "react-icons/ri"
 import LeftBoxCartItem from '../../Components-Rk/LeftBoxCartItem'
 import { Badge, Flex, HStack, Text, Box, Center, Checkbox } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
+import {useDispatch} from "react-redux"
+import { paymentAmount } from '../../Redux/payment/payment.action'
 // import { Box, HStack } from '@chakra-ui/react';
 
 
 const Subscription = () => {
     const [checkItem,setCheckedItems] = useState(false)
     const navigate = useNavigate()
-    console.log(checkItem)
+    const dispatch = useDispatch()
+    // console.log(checkItem)
 
 
     const handleSubClick = ()=>{
+        let pay = checkItem?399:699;
+        dispatch(paymentAmount(pay))
+
         navigate("/myaccount/accountinfo")
     }
     return (

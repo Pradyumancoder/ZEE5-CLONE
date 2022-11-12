@@ -11,13 +11,16 @@ import { CgProfile } from "react-icons/cg"
 import { BsSearch } from "react-icons/bs"
 import React, { useState } from 'react'
 import { Image, Stack } from '@chakra-ui/react';
+import {useDispatch} from "react-redux"
+import { buySubscription } from '../../Redux/payment/payment.action'
 const init = {
     cardNo:"",
     pinNo:""
 }
 const Payment = () => {
 
-    const [payDet,setPayDet] = useState(init)
+    const [payDet,setPayDet] = useState(init);
+    const dispatch = useDispatch()
     
     const handleChange = (e)=>{
         setPayDet({...payDet,[e.target.name]:e.target.value});
@@ -25,8 +28,15 @@ const Payment = () => {
 
     }
     const paymentStep = ()=>{
-        
+        const {name,token} = JSON.parse(localStorage.getItem("userCred"))
+        const [email,password] = token.split("##+##");
+        console.log({email,password})
+        dispatch(buySubscription({email,password}))
+
+
+
         // check crediential is exist or not 
+
         
     }
 
