@@ -57,8 +57,10 @@ function Navbar(){
             <Link to="/"><Img className="NavbarFirstPartV-Icon" src="vidfyIcon.png" /></Link>
             
            <Link to="/"> <Box className="NavbarFirstPartV-Home">Home</Box></Link>
-            <Link to="/tvShows"><Box className="NavbarFirstPartV-Tv">Tv Shows </Box></Link>
             <Link to="/movies"><Box className="NavbarFirstPartV-Movies"> Movies</Box></Link>
+            <Link to="/webseries"><Box className="NavbarFirstPartV-Movies"> Web Series</Box></Link>
+            <Link to="/tvShows"><Box className="NavbarFirstPartV-Tv">Tv Shows </Box></Link>
+
             <Box className="NavbarFirstPartV-Option"><BsGrid3X3GapFill onClick={()=>setHover(!hover)}
                  size={"20"} /></Box>
             </Flex>
