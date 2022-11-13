@@ -12,12 +12,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
       <AllRoutes></AllRoutes>
-      {/* <Header/> */}
-      {/* <MiddleSection/> */}
-      {/* <Playshow/> */}
-      {/* <VideoPlay/> */}
+  
       <Footer/>
 
     </div>
