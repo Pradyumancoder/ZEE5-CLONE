@@ -1,3 +1,8 @@
+![Screenshot (106)](https://user-images.githubusercontent.com/97114184/201617825-a6248c41-9803-49ae-9594-0aef2f08b784.png)
+![Screenshot (108)](https://user-images.githubusercontent.com/97114184/201617919-13fd1f3e-a247-4a73-ae7d-b99dc5c71bdd.png)
+![Screenshot (110)](https://user-images.githubusercontent.com/97114184/201617986-d3911c30-363b-4dc0-8a05-84f674b201f7.png)
+![Screenshot (111)](https://user-images.githubusercontent.com/97114184/201618035-ab6b60ea-6d7b-4449-8587-2e3dc4463e1e.png)
+![Screenshot (112)](https://user-images.githubusercontent.com/97114184/201618076-5a5da62e-3bd7-450b-b462-fec2e5e81697.png)
 [] Deployment Link
 
 vercel link-https://vidfy.vercel.app/
@@ -17,19 +22,12 @@ vercel link-https://vidfy.vercel.app/
 
 ## Screen Short
 - Home
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790574-517f5a2e-d314-4795-9e8d-b28601cec36a.png)
+![Screenshot (106)](https://user-images.githubusercontent.com/97114184/201617825-a6248c41-9803-49ae-9594-0aef2f08b784.png)
+- Home page Slider and navbar
+![Screenshot (108)](https://user-images.githubusercontent.com/97114184/201617919-13fd1f3e-a247-4a73-ae7d-b99dc5c71bdd.png)
 - Footer
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790572-44d3aedf-62e3-442f-865e-ae5ee06c4293.png)
-- Sign IN
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790584-98200afb-7240-4c2d-b81b-eb10046e0a89.png)
+![Screenshot (111)](https://user-images.githubusercontent.com/97114184/201618035-ab6b60ea-6d7b-4449-8587-2e3dc4463e1e.png)
 - Login
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790569-55b678c7-e611-4ad7-831c-52f6dd9d0115.png)
-- Select Location
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790575-3bd7f236-9c10-4a89-9514-f33e6a6e7461.png)
-- Booking Car
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790595-8723b759-1445-484c-8dee-a2076857b946.png)
-- Checkout Page
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790592-97203e87-e95e-4a0f-9a05-e61907c82d88.png)
+![Screenshot (112)](https://user-images.githubusercontent.com/97114184/201618076-5a5da62e-3bd7-450b-b462-fec2e5e81697.png)
+- Buynow plan
 
-- Payment Page
-![App Screenshot](https://user-images.githubusercontent.com/91541289/146790581-b69cd1a4-8c9b-4208-8181-e8314bb3cde7.png)
