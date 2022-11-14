@@ -2,6 +2,17 @@
 #video-player{
     padding-top: 2rem;
 }
+.video-second-box{
+    background-color:black;
+    height: 170vh;
+    overflow-y: scroll;
+    /* border:2px solid green */
+   
+ 
+}
+.video-second-box::-webkit-scrollbar {
+    display: none;
+}
 @media all and (min-width:768px) and (max-width:1024px){
     #video-player{
         width: 75vw;
@@ -16,3 +27,4 @@
         margin: 15px auto;
     }
 }
+

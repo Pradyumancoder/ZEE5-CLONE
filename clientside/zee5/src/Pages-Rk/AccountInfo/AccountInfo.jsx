@@ -50,7 +50,7 @@ const AccountInfo = () => {
                     color="black" mt="1.2rem" h="48px" placeholder='Password' size='md' />
                 {/* onClick event for navigate to the payment page */}
                 <Button
-                    disabled={userCred.email.length == 0 || userCred.password.length <= 4}
+                    disabled={userCred.email.length == 0 || userCred.password.length <= 0}
                     onClick={handleAccountInfo}
                     size='md'
                     height='48px'

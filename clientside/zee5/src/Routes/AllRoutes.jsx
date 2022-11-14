@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import PrivRoutVideo from "../Components-Rk/PrivRoutVideo";
 import VideoPlay from "../Components-Rk/VideoPlay";
 import Login from "../components-v/Login/LoginV";
 import Signup from "../components-v/Signup/SignupV";
@@ -27,7 +28,7 @@ const AllRoutes = () => {
       <Route path="/myaccount/subscription" element={<Subscription />} />
       <Route path="/myaccount/accountinfo" element={<AccountInfo />} />
       <Route path="/myaccount/payment" element={<Payment />} />
-      <Route path="/video/play/:title" element={<VideoPlay />} />
+      <Route path="/video/play/:title" element={<PrivRoutVideo><VideoPlay /></PrivRoutVideo>} />
 
     </Routes>
   );

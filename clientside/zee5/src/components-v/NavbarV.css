@@ -119,6 +119,66 @@ padding-bottom: 5px;
             
 
 
+            /*  */ for search only
+            *{
+                box-sizing: border-box;
+            }
+                nav{
+                display: flex;
+                justify-content: space-around;
+                background-color: rgba(0, 0, 0, 0.8);
+                align-items: center;
+                color: white;
+                padding: 6px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #search{
+                width: 100%;
+                padding: 6px 10px;
+            }
+            .serch{
+                position: relative;
+                width: 400px;
+            }
+
+            #movies{
+                position: absolute;
+                /* width: 25rem; */
+                width: 100%;
+                height: 80vh;
+                /* border: 1px solid blue; */
+                top: 130%;
+                left: 0;
+                overflow: scroll;
+                visibility: hidden;
+                visibility: visible;
+                z-index: 5;
+                /* background-color: black; */
+            }
+            #movies img{
+                width: 40%;
+            }
+          
+            #movies>div{
+                display: flex;
+                color: black;
+                margin: 10px;
+                border: 1px solid black;
+                /* justify-content: space-around; */
+                align-items: center;
+            }
+            #movies>div>p{
+                margin-left: 15px;
+            }
+            #showImage{
+                /* margin: auto; */
+                margin-left: 50vw;
+            }
+
+            /*  */
             @media all and (min-width: 480px ) and (max-width: 880px ) {
 
                 .NavbarSecondpartV-Search{

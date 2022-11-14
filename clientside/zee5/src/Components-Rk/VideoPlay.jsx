@@ -40,9 +40,9 @@ const VideoPlay = () => {
     return (
         <>
             <Flex >
-                <Box w="821px" className="video-first-box">
+                <Box w="900px" className="video-first-box">
                     <div>
-                        <iframe id="video-player" width="821" height="425" src={`https://www.youtube.com/embed/${myVideoId}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe id="video-player" width="900" height="425" src={`https://www.youtube.com/embed/${myVideoId}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <Box p={{ base: "1rem", md: "1.5rem", lg: "2rem" }}>
                         <Text textAlign="left" m="16px 0 8px 0" fontSize="14px" fontWeight="bold" color="white" >{title}</Text>
@@ -128,7 +128,7 @@ const VideoPlay = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box w="400px" display="flex" className="video-second-box" >
+                <Box w="32vw" justifyContent="center" display={['none','flex','flex']} className="video-second-box" >
                     <Trending/>
                     {/* <Trending/> */}
                 </Box>

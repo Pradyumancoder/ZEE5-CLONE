@@ -12,7 +12,8 @@ import { BsSearch } from "react-icons/bs"
 import React, { useState } from 'react'
 import { Image, Stack } from '@chakra-ui/react';
 import {useDispatch} from "react-redux"
-import { buySubscription } from '../../Redux/payment/payment.action'
+import { buySubscription } from '../../Redux/payment/payment.action';
+import { useNavigate } from 'react-router-dom'
 const init = {
     cardNo:"",
     pinNo:""
@@ -21,6 +22,7 @@ const Payment = () => {
 
     const [payDet,setPayDet] = useState(init);
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     
     const handleChange = (e)=>{
         setPayDet({...payDet,[e.target.name]:e.target.value});
@@ -30,11 +32,12 @@ const Payment = () => {
     const paymentStep = ()=>{
         const {name,token} = JSON.parse(localStorage.getItem("userCred"))
         const [email,password] = token.split("##+##");
-        console.log({email,password})
+        // console.log({email,password})
         dispatch(buySubscription({email,password}))
 
 
-
+        navigate("/")
+        // console.log('hi')
         // check crediential is exist or not 
 
         
