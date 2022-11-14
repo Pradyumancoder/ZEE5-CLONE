@@ -1,6 +1,6 @@
 vercel link-https://vidfy.vercel.app/
 
-[]used language
+used language:-
 
 - React
 - Javascript
@@ -30,6 +30,6 @@ vercel link-https://vidfy.vercel.app/
 Team Member:-
 - Pradyuman shukla
 - Rahula Kumar
-- Gowtham
-- Vishnu Upadhaya
+- Gowtham Chokkalingam
+- Vishnu Kant Upadhyay
 - Manoj Kumar
