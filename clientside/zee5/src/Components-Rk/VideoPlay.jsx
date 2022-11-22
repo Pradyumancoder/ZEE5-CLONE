@@ -28,15 +28,15 @@ const VideoPlay = () => {
         onToggle();
         setToggle(!toggle)
     }
-    // useEffect(()=>{
-    //         axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${title}&key=${api_key}`).then(res=>{
-    //             res=res.data?.items[0]?.id?.videoId
-    //           if(res) setVideoId(res);
-    //         }).catch(err=>{
-    //             console.log(err)
-    //         })
+    useEffect(()=>{
+            axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${title}&key=${api_key}`).then(res=>{
+                res=res.data?.items[0]?.id?.videoId
+              if(res) setVideoId(res);
+            }).catch(err=>{
+                console.log(err)
+            })
         
-    // },[])
+    },[])
     return (
         <>
             <Flex >
