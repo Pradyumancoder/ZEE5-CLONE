@@ -29,7 +29,7 @@ used language:-
 
 Team Member:-
 - Pradyuman shukla
-- Rahula Kumar
+- Rahul Kumar
 - Gowtham Chokkalingam
 - Vishnu Kant Upadhyay
 - Manoj Kumar
