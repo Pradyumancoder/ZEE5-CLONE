@@ -29,6 +29,7 @@ export const authSignUpSucess = (payload) => async (dispatch) => {
         type: AUTH_SIGN_UP_SUCCESS,
         payload: res.data
     })
+    
 }
 
 export const authSignOut = () => {
