@@ -28,7 +28,7 @@ const handleChange=(e)=>{
 const handleSubmit=(e)=>{
 e.preventDefault();
 dispatch(authSignUpSucess({...user}))
-// console.log({...user})
+console.log({...user})
 }
 console.log(user)
 return(

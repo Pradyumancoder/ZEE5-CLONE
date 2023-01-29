@@ -15,15 +15,16 @@ export const authSignUpError = () => {
 }
 
 export const authSignInSucess = (payload) => async(dispatch)=> {
-    let res = await axios.post(`https://vidfy.up.railway.app/users/login`, payload);
+    let res = await axios.post(`https://mockserver-230o.onrender.com/login`, payload);
     return dispatch({
         type: AUTH_SIGN_IN_SUCCESS,
         payload: res.data
     })
+    
 }
 
 export const authSignUpSucess = (payload) => async (dispatch) => {
-    let res = await axios.post(`https://vidfy.up.railway.app/users/signup`, payload);
+    let res = await axios.post(`https://mockserver-230o.onrender.com/signup`, payload);
     return dispatch({
         type: AUTH_SIGN_UP_SUCCESS,
         payload: res.data
