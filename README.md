@@ -4,25 +4,24 @@ The TripVillas website has been cloned by myself and my team of 4 members as pro
 
 <h1>Technology</h1>
 <hr>
-Front-end: HTML, CSS, JavaScript,ReactJs, Redux, ChakraUi.
-Back-end: nodeJs, expressJs, JavaScript.
-Version control: Git and GitHub.
-Hosting: Vercel
+<h1>&#x2022; Front-end: HTML, CSS, JavaScript,ReactJs, Redux, ChakraUi.</h1>
+<h1>&#x2022; Back-end: nodeJs, expressJs, JavaScript.</h1>
+<h1>&#x2022; Version control: Git and GitHub.</h1>
+<h1>&#x2022; Hosting: Vercel</h1>
 
 
 vercel link-https://vid5.vercel.app/
 
-used language:-
+<h1>Features</h1>
+<hr>
+<h1>&#x2022; Transitioning accordions in various positions for various purposes.</h1>
+<h1>&#x2022; Multi-level interaction in the sign-up process for users to know their needs and to provide service accordingly and.</h1>
+<h1>&#x2022; password strength given by the user is displayed live.</h1>
+<h1>&#x2022; Sign-in for users.</h1>
+<h1>&#x2022;search for hotels</h1>
+<h1>&#x2022; watch videos.</h1>
 
-- React
-- Javascript
-- Css
-- Chakara UI
-- Tailwind Css
-- Nodejs
-- Redux js
-- express js
-- Mongodb
+
 
 
 ## Screen Short
