@@ -1,3 +1,15 @@
+ZEE% is one of the best online streaming platform
+
+The TripVillas website has been cloned by myself and my team of 4 members as project of our construct week at Masai School over 5 days.
+
+<h1>Technology</h1>
+<hr>
+Front-end: HTML, CSS, JavaScript,ReactJs, Redux, ChakraUi.
+Back-end: nodeJs, expressJs, JavaScript.
+Version control: Git and GitHub.
+Hosting: Vercel
+
+
 vercel link-https://vid5.vercel.app/
 
 used language:-
